@@ -22,3 +22,23 @@ stages:
       md5: 707e9c63aecbcf7f80889799728f93ad.dir
       size: 288857
       nfiles: 4
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed/X_train.csv
+      md5: 7a713ae3ad829f77ed81dee2ba0d2334
+      size: 217902
+    - path: data/processed/y_train.csv
+      md5: 41d6700c65d86856e842b1a2e28d7769
+      size: 13060
+    - path: src/train.py
+      md5: 4940257f3860b8bdb8ff50c06a74d425
+      size: 1330
+    params:
+      params.yaml:
+        train.random_state: 0
+    outs:
+    - path: models
+      md5: 2bb5ae4d1ce9a17458412be123f1821f.dir
+      size: 10632158
+      nfiles: 1
