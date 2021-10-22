@@ -1,4 +1,4 @@
-from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 import pickle
 import json
 import pandas as pd
@@ -28,9 +28,11 @@ val_predictions = iowa_model.predict(X_valid)
 
 # Compute the MAE value for the model
 val_mae = mean_absolute_error(y_valid, val_predictions)
+val_mean_squared_error = mean_squared_error(y_valid, val_predictions)
 
 # Write MAE to file
 with open(metrics_folder_path / 'scores.json', 'w') as scores_file:
-    json.dump({"mae": val_mae}, scores_file, indent=4)
+    json.dump({"mae": val_mae, "mean_squared_error": val_mean_squared_error}, 
+    scores_file, indent=4)
 
 print("Evaluation completed.")
