@@ -19,6 +19,11 @@ metrics_folder_path = Path("metrics")
 X_valid = pd.read_csv(input_folder_path / "X_valid.csv")
 y_valid = pd.read_csv(input_folder_path / "y_valid.csv")
 
+
+# ================ #
+# MODEL EVALUATION #
+# ================ #
+
 # Load the model
 with open(model_folder_path / "iowa_model.pkl", "rb") as pickled_model:
     iowa_model = pickle.load(pickled_model)

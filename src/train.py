@@ -32,9 +32,9 @@ with open(params_path, "r") as params_file:
 # ============== #
 
 # Specify the model
-if params['algorithm'] == "DecisionTreeRegressor":
+if params["algorithm"] == "DecisionTreeRegressor":
     algorithm = DecisionTreeRegressor
-elif params['algorithm'] == "RandomForestRegressor":
+elif params["algorithm"] == "RandomForestRegressor":
     algorithm = RandomForestRegressor
 
 # For the sake of reproducibility, I set the `random_state`

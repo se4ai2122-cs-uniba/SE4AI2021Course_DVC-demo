@@ -3,5 +3,5 @@ prepare:
   test_size: 0.2
   random_state: 0
 train:
-  algorithm: "DecisionTreeRegressor"
+  algorithm: "RandomForestRegressor"
   random_state: 0

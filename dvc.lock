@@ -36,12 +36,12 @@ stages:
       size: 1479
     params:
       params.yaml:
-        train.algorithm: DecisionTreeRegressor
+        train.algorithm: RandomForestRegressor
         train.random_state: 0
     outs:
     - path: models
-      md5: f28e7fca5b180604132fcacdd3f14c68.dir
-      size: 169998
+      md5: 2bb5ae4d1ce9a17458412be123f1821f.dir
+      size: 10632158
       nfiles: 1
   evaluate:
     cmd: python src/evaluate.py
@@ -52,10 +52,13 @@ stages:
     - path: data/processed/y_valid.csv
       md5: 9e132ff0314b2ec6b31602a7a0d804ee
       size: 3265
+    - path: models/iowa_model.pkl
+      md5: 0a25ce9d51b961fa9e4dc0f17d479620
+      size: 10632158
     - path: src/evaluate.py
       md5: c0be102778e15144a47aabc8de41c844
       size: 1166
     outs:
     - path: metrics/scores.json
-      md5: 151582b63f350f0f42d8171ee94c5c50
-      size: 67
+      md5: 554d887c155156da2188a8c7e12682bd
+      size: 77

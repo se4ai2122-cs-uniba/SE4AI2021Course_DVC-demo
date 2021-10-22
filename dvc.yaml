@@ -25,6 +25,7 @@ stages:
   evaluate:
     cmd: python src/evaluate.py
     deps:
+    - models/iowa_model.pkl
     - data/processed/X_valid.csv
     - data/processed/y_valid.csv
     - src/evaluate.py
