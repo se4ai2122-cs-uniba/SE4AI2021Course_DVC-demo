@@ -1,8 +1,10 @@
-# DVC commands
+# DVC demo for the SE4AI 2021-22 course
 
-These are the DVC commands I used to produce the stages in the `dvc.yaml` file.
+## DVC `run` commands
 
-## Data preparation stage
+These are the DVC `run` commands that I used to generate the stages in the `dvc.yaml` file.
+
+#### Data preparation stage
 
 ```bash
 dvc run -n prepare \
@@ -12,7 +14,7 @@ dvc run -n prepare \
 python src/prepare.py
 ```
 
-## Model training stage
+### Model training stage
 
 ```bash
 dvc run -n train \
@@ -22,7 +24,7 @@ dvc run -n train \
 python src/train.py
 ```
 
-## Model evaluation stage
+### Model evaluation stage
 
 ```bash
 dvc run -n evaluate \
