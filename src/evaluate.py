@@ -31,6 +31,6 @@ val_mae = mean_absolute_error(y_valid, val_predictions)
 
 # Write MAE to file
 with open(metrics_folder_path / 'scores.json', 'w') as scores_file:
-    json.dump({"mae": str(val_mae)}, scores_file, indent=4)
+    json.dump({"mae": val_mae}, scores_file, indent=4)
 
 print("Evaluation completed.")
