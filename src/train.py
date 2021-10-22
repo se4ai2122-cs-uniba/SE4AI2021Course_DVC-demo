@@ -32,8 +32,13 @@ with open(params_path, "r") as params_file:
 # ============== #
 
 # Specify the model
-# For the sake of reproducibility, I set the `random_state` argument equal to 0
-iowa_model = RandomForestRegressor(random_state=params["random_state"])
+if params['algorithm'] == "DecisionTreeRegressor":
+    algorithm = DecisionTreeRegressor
+elif params['algorithm'] == "RandomForestRegressor":
+    algorithm = RandomForestRegressor
+
+# For the sake of reproducibility, I set the `random_state`
+iowa_model = algorithm(random_state=params["random_state"])
 
 # Then I fit the model to the training data
 iowa_model.fit(X_train, y_train)
