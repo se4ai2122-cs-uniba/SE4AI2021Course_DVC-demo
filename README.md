@@ -1,10 +1,14 @@
 # DVC demo for the SE4AI 2021-22 course
 
+The code in this repo is supposed to be shared with the students via [this GitHub Gist](https://gist.github.com/louieQ/55c9845fa131a5defd359999afeba0fa):
+it contains the python scripts from this repo plus a couple of config files
+(`requirements.txt` and `params.yaml`).
+
 ## DVC `run` commands
 
 These are the DVC `run` commands that I used to generate the stages in the `dvc.yaml` file.
 
-#### Data preparation stage
+### Data preparation stage
 
 ```bash
 dvc run -n prepare \
