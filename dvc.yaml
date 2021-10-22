@@ -19,6 +19,7 @@ stages:
     - src/train.py
     params:
     - train.random_state
+    - train.algorithm
     outs:
     - models
   evaluate:

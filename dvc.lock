@@ -36,6 +36,7 @@ stages:
       size: 1479
     params:
       params.yaml:
+        train.algorithm: DecisionTreeRegressor
         train.random_state: 0
     outs:
     - path: models
