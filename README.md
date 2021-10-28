@@ -13,8 +13,8 @@ These are the DVC `run` commands that I used to generate the stages in the `dvc.
 ```bash
 dvc run -n prepare \
 -p prepare.train_size,prepare.test_size,prepare.random_state \
--d src/prepare.py -d data/raw/train.csv -d data/raw/test.csv
--o data/processed
+-d src/prepare.py -d data/raw/train.csv -d data/raw/test.csv \
+-o data/processed \
 python src/prepare.py
 ```
 
