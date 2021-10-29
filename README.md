@@ -25,7 +25,7 @@ python src/prepare.py
 dvc run -n train \
 -p train.random_state,train.algorithm \
 -d src/train.py -d data/processed/X_train.csv -d data/processed/y_train.csv \
--o models \
+-o models/iowa_model.pkl \
 python src/train.py
 ```
 
