@@ -14,7 +14,8 @@ These are the DVC `run` commands that I used to generate the stages in the `dvc.
 dvc run -n prepare \
 -p prepare.train_size,prepare.test_size,prepare.random_state \
 -d src/prepare.py -d data/raw/train.csv -d data/raw/test.csv \
--o data/processed \
+-o data/processed/X_train.csv -o data/processed/X_valid.csv \
+-o data/processed/y_train.csv -o data/processed/y_valid.csv \
 python src/prepare.py
 ```
 
