@@ -21,10 +21,10 @@ stages:
     - data/processed/y_train.csv
     - src/train.py
     params:
-    - train.random_state
     - train.algorithm
+    - train.random_state
     outs:
-    - models
+    - models/iowa_model.pkl
   evaluate:
     cmd: python src/evaluate.py
     deps:

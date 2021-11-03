@@ -7,7 +7,6 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 
-from utils import get_mae
 
 # Path of the parameters file
 params_path = Path("params.yaml")

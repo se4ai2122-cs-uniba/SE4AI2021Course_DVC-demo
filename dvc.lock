@@ -40,17 +40,16 @@ stages:
       md5: 41d6700c65d86856e842b1a2e28d7769
       size: 13060
     - path: src/train.py
-      md5: d7684b5804b8673071f2caca71660216
-      size: 1479
+      md5: aa8d8ee15e19d5a57677a645539abf76
+      size: 1453
     params:
       params.yaml:
         train.algorithm: RandomForestRegressor
         train.random_state: 0
     outs:
-    - path: models
-      md5: 2bb5ae4d1ce9a17458412be123f1821f.dir
+    - path: models/iowa_model.pkl
+      md5: 0a25ce9d51b961fa9e4dc0f17d479620
       size: 10632158
-      nfiles: 1
   evaluate:
     cmd: python src/evaluate.py
     deps:
