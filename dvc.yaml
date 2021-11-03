@@ -10,7 +10,10 @@ stages:
     - prepare.test_size
     - prepare.train_size
     outs:
-    - data/processed
+    - data/processed/X_train.csv
+    - data/processed/X_valid.csv
+    - data/processed/y_train.csv
+    - data/processed/y_valid.csv
   train:
     cmd: python src/train.py
     deps:

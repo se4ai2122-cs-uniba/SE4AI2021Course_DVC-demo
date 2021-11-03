@@ -18,10 +18,18 @@ stages:
         prepare.test_size: 0.2
         prepare.train_size: 0.8
     outs:
-    - path: data/processed
-      md5: 707e9c63aecbcf7f80889799728f93ad.dir
-      size: 288857
-      nfiles: 4
+    - path: data/processed/X_train.csv
+      md5: 7a713ae3ad829f77ed81dee2ba0d2334
+      size: 217902
+    - path: data/processed/X_valid.csv
+      md5: 87610f109ee8b45ac499d8323f563faf
+      size: 54630
+    - path: data/processed/y_train.csv
+      md5: 41d6700c65d86856e842b1a2e28d7769
+      size: 13060
+    - path: data/processed/y_valid.csv
+      md5: 9e132ff0314b2ec6b31602a7a0d804ee
+      size: 3265
   train:
     cmd: python src/train.py
     deps:
