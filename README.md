@@ -15,7 +15,7 @@ dvc import https://github.com/collab-uniba/Software-Solutions-for-Reproducible-M
 dvc import https://github.com/collab-uniba/Software-Solutions-for-Reproducible-ML-Experiments input/home-data-for-ml-course/test.csv -o data/raw
 ```
 
-Observe that, although if available in Kaggle, these data files were taken from another public GitHub repository, [Software Solutions for Reproducible ML Experiments](https://github.com/collab-uniba/Software-Solutions-for-Reproducible-ML-Experiments), to demonstrate this capability of DVC.
+Observe that, although available in Kaggle, these data files were taken from another public GitHub repository, [Software Solutions for Reproducible ML Experiments](https://github.com/collab-uniba/Software-Solutions-for-Reproducible-ML-Experiments), to demonstrate this capability of DVC.
 
 ## Setup a Python environment
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## Run the ML pipeline stages via DVC
 
-Finally, we executed the following three DVC `run` commands, correspoinding to the three stages of this simple ML pipeline (data preparation, model training, and model evaluation).
+Finally, we executed the following three DVC `run` commands, corresponding to the three stages of this simple ML pipeline (data preparation, model training, and model evaluation).
 
 ### Data preparation stage
 
