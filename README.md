@@ -2,7 +2,7 @@
 
 This is a demo ML project used to show the main features of [DVC](https://dvc.org) in the 2021 edition of the Software Engineering for AI-enabled Systems course (University of Bari, Italy - Dept. of Computer Science).
 
-The scripts used in this project are freely inspired to the [Kaggle](https://www.kaggle.com) Tutorial ["Intermediate Machine Learning"](https://www.kaggle.com/learn/intermediate-machine-learning). Accordingly, the example uses data from the [Housing Prices Competition for Kaggle Learn Users](https://www.kaggle.com/c/home-data-for-ml-course).
+The scripts used in this project are freely inspired by the [Kaggle](https://www.kaggle.com) Tutorial ["Intermediate Machine Learning"](https://www.kaggle.com/learn/intermediate-machine-learning). Accordingly, the example uses data from the [Housing Prices Competition for Kaggle Learn Users](https://www.kaggle.com/c/home-data-for-ml-course).
 
 
 ## Import raw data
